@@ -2,7 +2,10 @@
     width: 600px;
     min-height: 732px;
     border-radius: 20px;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Optional: adds a blur effect behind the element */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Subtle shadow for depth */
+    border: 1px solid rgba(255, 255, 255, 0.18); /* Thin white border */    
     margin: auto;
     margin-top: 174px;
     display: flex;
@@ -13,10 +16,15 @@
 
 .todo-header{
     margin-top: 84px;
-    color: #002764;
-    font-size: 36px;
+    background: linear-gradient(270deg , #361C6A 10% , #844EF3 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    font-size: 36px;
     font-weight: 600;
     line-height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -37,12 +45,14 @@
     height :80px;
     padding-left: 35px;
     font-size: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
 
 }
 
 .todo-add-btn{
     border-radius: 50px;
-    background: red;
+    background: linear-gradient(270deg , #361C6A 10% , #844EF3 100%);
     width: 187px;
     height: 80px;
     display: flex;
@@ -53,5 +63,12 @@
     font-size: 26px;
     font-weight: 600;
     cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
     
 }
+
+
+.todo-add-btn:hover{
+transform: scale(1.05);
+   transition: 0.3s;} 
