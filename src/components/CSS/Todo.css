@@ -71,4 +71,7 @@
 
 .todo-add-btn:hover{
 transform: scale(1.05);
-   transition: 0.3s;} 
+   transition: 0.3s;
+   border: 2px solid black ;
+
+} 
